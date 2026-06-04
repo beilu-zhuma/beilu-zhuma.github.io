@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>随笔 on 逐马的小破站</title><link>https://zhuma9527.com/tags/%E9%9A%8F%E7%AC%94/</link><description>Recent content in 随笔 on 逐马的小破站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 04 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://zhuma9527.com/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>https://zhuma9527.com/p/hello-world/</link><pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate><guid>https://zhuma9527.com/p/hello-world/</guid><description>&lt;h2 id="你好世界"&gt;你好，世界！
+&lt;/h2&gt;&lt;p&gt;这是我的第一篇博客文章。欢迎来到我的博客！&lt;/p&gt;
+&lt;h3 id="这是三级标题"&gt;这是三级标题
+&lt;/h3&gt;&lt;p&gt;这是一段正文，用来测试排版效果。&lt;/p&gt;
+
+ &lt;blockquote&gt;
+ &lt;p&gt;这是一段引用文字。&lt;/p&gt;
+
+ &lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>
