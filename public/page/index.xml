@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on 逐马的小破站</title>
-        <link>https://zhuma9527.com/page/</link>
+        <link>http://localhost:1313/page/</link>
         <description>Recent content in Pages on 逐马的小破站</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 04 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://zhuma9527.com/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 04 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
             <title>关于</title>
-            <link>https://zhuma9527.com/%E5%85%B3%E4%BA%8E/</link>
+            <link>http://localhost:1313/%E5%85%B3%E4%BA%8E/</link>
             <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-            <guid>https://zhuma9527.com/%E5%85%B3%E4%BA%8E/</guid>
+            <guid>http://localhost:1313/%E5%85%B3%E4%BA%8E/</guid>
             <description>&lt;h2 id=&#34;关于我&#34;&gt;关于我&#xD;&#xA;&lt;/h2&gt;&lt;p&gt;我是逐马，没什么感兴趣的 一个很无聊的人&lt;/p&gt;&#xA;&lt;h3 id=&#34;经历&#34;&gt;经历&#xD;&#xA;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;2023 - 至今&lt;/strong&gt;： 在哈尔滨工业大学（深圳）自动化专业求学（本科）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;关于这个博客&#34;&gt;关于这个博客&#xD;&#xA;&lt;/h2&gt;&lt;p&gt;这个博客主要分享日常，偶尔也会发点技术相关的东西（也许吧 😂）。建这个博客的根本原因，是我一直觉得拥有一个个人主页是很酷的事情。直接原因嘛，是看了&lt;a class=&#34;link&#34; href=&#34;https://speechlesspanda.github.io/2026/03/01/%E7%BB%83%E4%B9%A0%E6%97%B6%E9%95%BF%E4%B8%80%E5%B9%B4%E5%8D%8A%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%9C%89%E6%84%9F/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;《练习时长一年半大学生有感》&lt;/a&gt; 后受到了鼓舞 😂（虽然第一次看到是在 &lt;a class=&#34;link&#34; href=&#34;https://hoa.moe/blog/thoughts-from-a-college-student-with-one-and-a-half-years-of-practice&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;HOA&lt;/a&gt; 上）。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;联系我&#34;&gt;联系我&#xD;&#xA;&lt;/h2&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;：&lt;a class=&#34;link&#34; href=&#34;https://github.com/beilu-zhuma&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xD;&#xA;    &gt;beilu-zhuma&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;邮箱&lt;/strong&gt;：18755667356@163.com&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&#xD;&#xA;    &lt;blockquote&gt;&#xD;&#xA;        &lt;p&gt;怕什么真理无穷，进一寸有一寸的欢喜&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;/blockquote&gt;&#xD;&#xA;</description>
         </item><item>
             <title>归档</title>
-            <link>https://zhuma9527.com/%E5%BD%92%E6%A1%A3/</link>
+            <link>http://localhost:1313/%E5%BD%92%E6%A1%A3/</link>
             <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-            <guid>https://zhuma9527.com/%E5%BD%92%E6%A1%A3/</guid>
+            <guid>http://localhost:1313/%E5%BD%92%E6%A1%A3/</guid>
             <description></description>
         </item><item>
             <title>搜索</title>
-            <link>https://zhuma9527.com/%E6%90%9C%E7%B4%A2/</link>
+            <link>http://localhost:1313/%E6%90%9C%E7%B4%A2/</link>
             <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-            <guid>https://zhuma9527.com/%E6%90%9C%E7%B4%A2/</guid>
+            <guid>http://localhost:1313/%E6%90%9C%E7%B4%A2/</guid>
             <description></description>
         </item><item>
             <title>友链</title>
-            <link>https://zhuma9527.com/%E5%8F%8B%E9%93%BE/</link>
+            <link>http://localhost:1313/%E5%8F%8B%E9%93%BE/</link>
             <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-            <guid>https://zhuma9527.com/%E5%8F%8B%E9%93%BE/</guid>
+            <guid>http://localhost:1313/%E5%8F%8B%E9%93%BE/</guid>
             <description>&lt;p&gt;这里是我推荐的一些网站和资源。&lt;/p&gt;&#xA;</description>
         </item></channel>
 </rss>

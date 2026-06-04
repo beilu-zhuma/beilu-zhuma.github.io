@@ -3,97 +3,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zhuma9527.com/en/</loc>
+    <loc>http://localhost:1313/en/</loc>
     <lastmod>2026-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://zhuma9527.com/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://zhuma9527.com/en/"
+                href="http://localhost:1313/en/"
                 />
   </url><url>
-    <loc>https://zhuma9527.com/en/p/english-content-coming-soon/</loc>
+    <loc>http://localhost:1313/en/p/english-content-coming-soon/</loc>
     <lastmod>2026-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://zhuma9527.com/p/hello-world/"
+                href="http://localhost:1313/p/hello-world/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://zhuma9527.com/en/p/english-content-coming-soon/"
+                href="http://localhost:1313/en/p/english-content-coming-soon/"
                 />
   </url><url>
-    <loc>https://zhuma9527.com/en/about/</loc>
+    <loc>http://localhost:1313/en/about/</loc>
     <lastmod>2026-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://zhuma9527.com/%E5%85%B3%E4%BA%8E/"
+                href="http://localhost:1313/%E5%85%B3%E4%BA%8E/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://zhuma9527.com/en/about/"
+                href="http://localhost:1313/en/about/"
                 />
   </url><url>
-    <loc>https://zhuma9527.com/en/tags/notice/</loc>
+    <loc>http://localhost:1313/en/tags/notice/</loc>
     <lastmod>2026-06-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zhuma9527.com/en/page/</loc>
-    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://zhuma9527.com/page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zhuma9527.com/en/page/"
-                />
-  </url><url>
-    <loc>https://zhuma9527.com/en/post/</loc>
+    <loc>http://localhost:1313/en/page/</loc>
     <lastmod>2026-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://zhuma9527.com/post/"
+                href="http://localhost:1313/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://zhuma9527.com/en/post/"
+                href="http://localhost:1313/en/page/"
                 />
   </url><url>
-    <loc>https://zhuma9527.com/en/tags/</loc>
+    <loc>http://localhost:1313/en/post/</loc>
     <lastmod>2026-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://zhuma9527.com/tags/"
+                href="http://localhost:1313/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://zhuma9527.com/en/tags/"
+                href="http://localhost:1313/en/post/"
                 />
   </url><url>
-    <loc>https://zhuma9527.com/en/categories/</loc>
+    <loc>http://localhost:1313/en/tags/</loc>
+    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://zhuma9527.com/categories/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://zhuma9527.com/en/categories/"
+                href="http://localhost:1313/en/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/"
                 />
   </url>
 </urlset>
