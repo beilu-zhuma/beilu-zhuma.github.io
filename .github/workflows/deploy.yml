@@ -1,0 +1,36 @@
+name: Deploy Hugo to GitHub Pages
+
+on:
+    push:
+        branches: ["source"]
+    workflow_dispatch:
+    schedule:
+        # Runs everyday at 8:00 AM (UTC 0:00)
+        - cron: "0 0 * * *"
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  submodules: true
+                  fetch-depth: 0
+
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v3
+              with:
+                  hugo-version: "0.162.1"
+                  extended: true
+
+            - name: Build Web
+              run: hugo --minify --cleanDestinationDir
+
+            - name: Deploy Web
+              uses: peaceiris/actions-gh-pages@v4
+              with:
+                  personal_token: ${{ secrets.PERSONAL_TOKEN }}
+                  publish_branch: main
+                  publish_dir: ./public
+                  commit_message: ${{ github.event.head_commit.message }}

@@ -1,0 +1,27 @@
+mainSections = ["post"]
+rssFullContent = true
+favicon = "img/my_avatar.jpg"
+
+[sidebar]
+    # emoji = "📝"
+    avatar = "img/my_avatar.jpg"
+
+[footer]
+    since = 2026
+
+[article]
+    [article.license]
+        enabled = true
+        default = "本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议。转载请注明来源 逐马！"
+
+[widgets]
+    homepage = [
+        { type = "search" },
+        { type = "archives", params = { limit = 5 } },
+        { type = "categories", params = { limit = 10 } },
+        { type = "tag-cloud", params = { limit = 10 } },
+    ]
+    page = [{ type = "toc" }]
+
+[comments]
+    enabled = false
