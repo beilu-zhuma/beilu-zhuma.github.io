@@ -24,4 +24,20 @@ favicon = "img/my_avatar.jpg"
     page = [{ type = "toc" }]
 
 [comments]
-    enabled = false
+    enabled = true
+    provider = "giscus"
+
+    [comments.giscus]
+        repo             = "beilu-zhuma/beilu-zhuma.github.io"
+        repoID           = "R_kgDOSwx7sg"
+        category         = "Announcements"
+        categoryID       = "DIC_kwDOSwx7ss4C-iVw"
+        mapping          = "pathname"
+        strict           = 0
+        reactionsEnabled = 1
+        emitMetadata     = 0
+        inputPosition    = "bottom"
+        lightTheme       = "light"
+        darkTheme        = "dark_dimmed"
+        lang             = "zh-CN"
+        loading          = "lazy"
