@@ -1,49 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>逐马的小破站</title><link>https://zhuma9527.com/</link><description>Recent content on 逐马的小破站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 04 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://zhuma9527.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>https://zhuma9527.com/p/hello-world/</link><pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate><guid>https://zhuma9527.com/p/hello-world/</guid><description>&lt;h2 id="你好世界"&gt;你好，世界！
-&lt;/h2&gt;&lt;p&gt;这是我的第一篇博客文章。欢迎来到我的博客！ 哈哈哈 我终于成功啦！&lt;/p&gt;</description></item><item><title>这是一篇测试文章</title><link>https://zhuma9527.com/p/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</link><pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate><guid>https://zhuma9527.com/p/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</guid><description>&lt;h2 id="这是一个二级标题"&gt;这是一个二级标题
-&lt;/h2&gt;&lt;p&gt;这是一段正文。测试一下中文排版的效果。&lt;/p&gt;
-&lt;h2 id="代码块测试"&gt;代码块测试
-&lt;/h2&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>逐马的小破站</title><link>https://zhuma9527.com/</link><description>Recent content on 逐马的小破站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 06 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://zhuma9527.com/index.xml" rel="self" type="application/rss+xml"/><item><title>PAS在UE57中做插件的一个示例</title><link>https://zhuma9527.com/p/pas-ue57-plugin-example/</link><pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate><guid>https://zhuma9527.com/p/pas-ue57-plugin-example/</guid><description>&lt;h1 id="动机"&gt;动机
+&lt;/h1&gt;&lt;p&gt;由于客观上任务的需要，我需要将&lt;a class="link" href="https://github.com/iamaisim/ProjectAirSim" target="_blank" rel="noopener"
+ &gt;ProjectAirSim&lt;/a&gt;在UE5.7中做插件作为插件使用以便于搭建自己的场景，当然他有&lt;a class="link" href="https://iamaisim.github.io/ProjectAirSim/use_plugin.html" target="_blank" rel="noopener"
+ &gt;官方说明文档&lt;/a&gt;,但是我觉得说的不是很清晰而且示例版本比较老了。这是我提供的&lt;a class="link" href="https://1859730198.share.123865.com/123pan/Mb4ivd-OBRaA?pwd=LrEu#" target="_blank" rel="noopener"
+ &gt;预编译好的包&lt;/a&gt;。(其实我不希望用网盘传输的但是我找不到更好的方法，如果你有好的建议欢迎告诉我)&lt;/p&gt;
+&lt;h1 id="第一步"&gt;第一步
+&lt;/h1&gt;&lt;p&gt;打开虚幻引擎 创建项目
+&lt;img alt="alt text" class="gallery-image" data-flex-basis="449px" data-flex-grow="187" height="1367" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="https://zhuma9527.com/p/pas-ue57-plugin-example/image1.png" srcset="https://zhuma9527.com/p/pas-ue57-plugin-example/image1_hu_64842e8f095427ff.png 800w, https://zhuma9527.com/p/pas-ue57-plugin-example/image1_hu_dc3056ba03644109.png 1600w, https://zhuma9527.com/p/pas-ue57-plugin-example/image1_hu_45003cbb0e93ed16.png 2400w, https://zhuma9527.com/p/pas-ue57-plugin-example/image1.png 2560w" width="2560"&gt;
+配置项目具体设置如下
+&lt;img alt="alt text" class="gallery-image" data-flex-basis="337px" data-flex-grow="140" height="1286" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="https://zhuma9527.com/p/pas-ue57-plugin-example/image2.png" srcset="https://zhuma9527.com/p/pas-ue57-plugin-example/image2_hu_d817db56264a9727.png 800w, https://zhuma9527.com/p/pas-ue57-plugin-example/image2_hu_5d966c36e5bc1944.png 1600w, https://zhuma9527.com/p/pas-ue57-plugin-example/image2.png 1809w" width="1809"&gt;&lt;/p&gt;
+&lt;h1 id="第二步"&gt;第二步
+&lt;/h1&gt;&lt;p&gt;将编译好的包放在所创建项目的根目录下
+&lt;img alt="alt text" class="gallery-image" data-flex-basis="520px" data-flex-grow="216" height="492" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="https://zhuma9527.com/p/pas-ue57-plugin-example/image3.png" srcset="https://zhuma9527.com/p/pas-ue57-plugin-example/image3_hu_1a02c7b1c07a63b8.png 800w, https://zhuma9527.com/p/pas-ue57-plugin-example/image3.png 1066w" width="1066"&gt;
+修改&lt;code&gt;Config\DefaultEngine.ini&lt;/code&gt;的内容&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
 &lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
 &lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
 &lt;/span&gt;&lt;span class="lnt"&gt;2
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class="lntd"&gt;
-&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;你好，世界！&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Script&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;EngineSettings&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;GameMapsSettings&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;GlobalDefaultGameMode&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="n"&gt;Script&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ProjectAirSim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ProjectAirSimGameMode&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id="列表测试"&gt;列表测试
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;第一项&lt;/li&gt;
-&lt;li&gt;第二项&lt;/li&gt;
-&lt;li&gt;第三项&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="引用测试"&gt;引用测试
-&lt;/h2&gt;
- &lt;blockquote&gt;
- &lt;p&gt;这是一段引用。用来测试引用块的样式。&lt;/p&gt;
-
- &lt;/blockquote&gt;
-&lt;h2 id="表格测试"&gt;表格测试
-&lt;/h2&gt;&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;项目&lt;/th&gt;
-					&lt;th&gt;状态&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;Hugo&lt;/td&gt;
-					&lt;td&gt;✅ 正常&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;部署&lt;/td&gt;
-					&lt;td&gt;✅ 正常&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;域名&lt;/td&gt;
-					&lt;td&gt;✅ 正常&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;</description></item></channel></rss>
+&lt;/div&gt;&lt;p&gt;&lt;img alt="alt text" class="gallery-image" data-flex-basis="482px" data-flex-grow="201" height="939" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="https://zhuma9527.com/p/pas-ue57-plugin-example/image4.png" srcset="https://zhuma9527.com/p/pas-ue57-plugin-example/image4_hu_29a142a38d76b4d3.png 800w, https://zhuma9527.com/p/pas-ue57-plugin-example/image4_hu_c5cea2f43b265a53.png 1600w, https://zhuma9527.com/p/pas-ue57-plugin-example/image4.png 1889w" width="1889"&gt;
+接着回到根目录双击&lt;code&gt;PAS_test2.uproject&lt;/code&gt;(或者你用虚幻引擎打开是一样的),提示要你重编译一下，点yes
+&lt;img alt="alt text" class="gallery-image" data-flex-basis="471px" data-flex-grow="196" height="326" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="https://zhuma9527.com/p/pas-ue57-plugin-example/image5.png" width="640"&gt;&lt;/p&gt;
+&lt;p&gt;漫长的等待&lt;/p&gt;
+&lt;p&gt;&lt;img alt="alt text" class="gallery-image" data-flex-basis="427px" data-flex-grow="178" height="405" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="https://zhuma9527.com/p/pas-ue57-plugin-example/image6.png" width="722"&gt;&lt;/p&gt;
+&lt;p&gt;当当当当，编译好后他会自动打开下面的页面&lt;/p&gt;
+&lt;p&gt;&lt;img alt="alt text" class="gallery-image" data-flex-basis="449px" data-flex-grow="187" height="1367" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="https://zhuma9527.com/p/pas-ue57-plugin-example/image7.png" srcset="https://zhuma9527.com/p/pas-ue57-plugin-example/image7_hu_f3ae0d2f2fa739fd.png 800w, https://zhuma9527.com/p/pas-ue57-plugin-example/image7_hu_e7bee53484d66b92.png 1600w, https://zhuma9527.com/p/pas-ue57-plugin-example/image7_hu_c38039778d712e39.png 2400w, https://zhuma9527.com/p/pas-ue57-plugin-example/image7.png 2559w" width="2559"&gt;
+按照&lt;a class="link" href="https://iamaisim.github.io/ProjectAirSim/use_plugin.html" target="_blank" rel="noopener"
+ &gt;官方说明文档&lt;/a&gt;中的说明，我们还需要进行一些其他的设置，比如说设置游戏模式但是我没找到这个选项卡所以就算了&lt;/p&gt;
+&lt;h1 id="第三步"&gt;第三步
+&lt;/h1&gt;&lt;p&gt;回到PAS的工程界面（这个python环境的配置&lt;a class="link" href="https://iamaisim.github.io/ProjectAirSim/development/use_prebuilt.html" target="_blank" rel="noopener"
+ &gt;参考&lt;/a&gt;），运行&lt;code&gt;hello_drone.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="alt text" class="gallery-image" data-flex-basis="449px" data-flex-grow="187" height="1368" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="https://zhuma9527.com/p/pas-ue57-plugin-example/image8.png" srcset="https://zhuma9527.com/p/pas-ue57-plugin-example/image8_hu_d663677e5fde138a.png 800w, https://zhuma9527.com/p/pas-ue57-plugin-example/image8_hu_534907332b080a17.png 1600w, https://zhuma9527.com/p/pas-ue57-plugin-example/image8_hu_3b9b74fc4bcbea9.png 2400w, https://zhuma9527.com/p/pas-ue57-plugin-example/image8.png 2560w" width="2560"&gt;&lt;/p&gt;
+&lt;p&gt;看见无人机已经可以正常工作了&lt;/p&gt;
+&lt;p&gt;&lt;img alt="alt text" class="gallery-image" data-flex-basis="445px" data-flex-grow="185" height="1379" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="https://zhuma9527.com/p/pas-ue57-plugin-example/image9.png" srcset="https://zhuma9527.com/p/pas-ue57-plugin-example/image9_hu_5fe91b3a372431c6.png 800w, https://zhuma9527.com/p/pas-ue57-plugin-example/image9_hu_9f51e6267c91c7b3.png 1600w, https://zhuma9527.com/p/pas-ue57-plugin-example/image9_hu_733310be5cb0a89e.png 2400w, https://zhuma9527.com/p/pas-ue57-plugin-example/image9.png 2560w" width="2560"&gt;&lt;/p&gt;
+&lt;p&gt;然后就是打包，谨慎起见我参考了&lt;a class="link" href="https://iamaisim.github.io/ProjectAirSim/use_plugin.html" target="_blank" rel="noopener"
+ &gt;官方说明文档&lt;/a&gt;中的设置，编辑&lt;code&gt;Config\DefaultGame.ini&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Script&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;UnrealEd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ProjectPackagingSettings&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;bCookAll&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img alt="alt text" class="gallery-image" data-flex-basis="451px" data-flex-grow="188" height="1361" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="https://zhuma9527.com/p/pas-ue57-plugin-example/image10.png" srcset="https://zhuma9527.com/p/pas-ue57-plugin-example/image10_hu_686fa23254b341b3.png 800w, https://zhuma9527.com/p/pas-ue57-plugin-example/image10_hu_f370a3fad0bc77f6.png 1600w, https://zhuma9527.com/p/pas-ue57-plugin-example/image10_hu_292699fbea2c8c50.png 2400w, https://zhuma9527.com/p/pas-ue57-plugin-example/image10.png 2560w" width="2560"&gt;&lt;/p&gt;
+&lt;p&gt;完结撒花！随着我学习的深入会接着发布后续内容（maybe）&lt;/p&gt;</description></item><item><title>Hello World</title><link>https://zhuma9527.com/p/hello-world/</link><pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate><guid>https://zhuma9527.com/p/hello-world/</guid><description>&lt;h2 id="你好世界"&gt;你好，世界！
+&lt;/h2&gt;&lt;p&gt;这是我的第一篇博客文章。欢迎来到我的博客！ 哈哈哈 我终于成功啦！&lt;/p&gt;</description></item></channel></rss>
