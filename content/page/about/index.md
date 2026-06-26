@@ -28,7 +28,7 @@ menu:
 ---
 
 ## 联系我
-
+如果你有任何问题或只是想打个招呼，请随时联系我！
 - **GitHub**：[beilu-zhuma](https://github.com/beilu-zhuma)
 - **邮箱**：18755667356@163.com
 

@@ -1,0 +1,112 @@
+.aplayer.aplayer-fixed {
+    left: 0;
+    right: auto;
+    z-index: 90;
+
+    .aplayer-body {
+        left: 0;
+        right: auto;
+        width: 400px;
+        max-width: calc(100vw - 16px);
+        border-radius: 0 8px 0 0;
+        box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .aplayer-list {
+        width: 400px;
+        max-width: calc(100vw - 16px);
+        border-radius: 8px 8px 0 0;
+    }
+
+    .aplayer-lrc {
+        left: 0;
+        right: auto;
+        width: 400px;
+        max-width: calc(100vw - 16px);
+    }
+
+    .aplayer-icon-back,
+    .aplayer-icon-forward,
+    .aplayer-icon-lrc,
+    .aplayer-icon-play {
+        display: inline-block;
+    }
+}
+
+#main-menu {
+    overflow-y: auto;
+    padding-bottom: calc(var(--spacing-2xl) + 86px);
+
+    @media (min-width: 768px) {
+        padding-bottom: 86px;
+    }
+}
+
+[data-scheme="light"] {
+    .aplayer.aplayer-fixed {
+        .aplayer-body,
+        .aplayer-list {
+            background: #fff;
+            border-color: #e8ecef;
+        }
+
+        .aplayer-info {
+            border-top-color: #e8ecef;
+        }
+    }
+}
+
+[data-scheme="dark"] {
+    .aplayer.aplayer-fixed {
+        color: #d8dee9;
+
+        .aplayer-body,
+        .aplayer-list {
+            background: #252932;
+            border-color: #3a414d;
+            box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.32);
+        }
+
+        .aplayer-info {
+            border-top-color: #3a414d;
+        }
+
+        .aplayer-list ol li {
+            border-top-color: #3a414d;
+
+            &:hover,
+            &.aplayer-list-light {
+                background: #303642;
+            }
+        }
+
+        .aplayer-list ol li .aplayer-list-index,
+        .aplayer-list ol li .aplayer-list-author,
+        .aplayer-info .aplayer-music .aplayer-author,
+        .aplayer-info .aplayer-controller .aplayer-time {
+            color: #aab3c2;
+        }
+
+        .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar {
+            background: #596273;
+        }
+
+        .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {
+            background: #778197;
+        }
+
+        .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path,
+        .aplayer-miniswitcher .aplayer-icon path {
+            fill: #c9d1dc;
+        }
+
+        .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon:hover path,
+        .aplayer-miniswitcher .aplayer-icon:hover path {
+            fill: #ffffff;
+        }
+
+        .aplayer-miniswitcher {
+            background: #343b47;
+        }
+    }
+}

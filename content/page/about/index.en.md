@@ -30,7 +30,7 @@ The fundamental reason I built this blog is that I've always thought having a pe
 ---
 
 ## Contact
-
+Feel free to reach out if you have any questions or just want to say hi!
 - **GitHub**：[beilu-zhuma](https://github.com/beilu-zhuma)
 - **Email**：18755667356@163.com
 

@@ -1,0 +1,27 @@
+<div id="aplayer"></div>
+
+{{- $songs := slice -}}
+{{- range hugo.Data.music.songs -}}
+    {{- $track := dict
+        "name" .name
+        "artist" (default "未知" .artist)
+        "url" .url
+        "cover" (default "/img/my_avatar.jpg" .cover)
+    -}}
+    {{- with .lrc -}}
+        {{- $track = merge $track (dict "lrc" .) -}}
+    {{- end -}}
+    {{- $songs = $songs | append $track -}}
+{{- end -}}
+
+<script>
+    window.zhumaMusicList = {{ $songs | jsonify | safeJS }};
+    {{- with .Site.Params.comments.giscus }}
+    window.zhumaGiscusThemes = {{ dict "light" .lightTheme "dark" .darkTheme | jsonify | safeJS }};
+    {{- end }}
+</script>
+{{- $searchOpts := dict "minify" hugo.IsProduction "JSXFactory" "createElement" -}}
+{{- $searchScript := resources.Get "ts/search.tsx" | js.Build $searchOpts | fingerprint -}}
+<script type="text/javascript" src="{{ $searchScript.RelPermalink }}" defer></script>
+<script src="{{ "vendor/aplayer/APlayer.min.js" | relURL }}"></script>
+<script src="{{ "vendor/pjax/pjax.min.js" | relURL }}"></script>
