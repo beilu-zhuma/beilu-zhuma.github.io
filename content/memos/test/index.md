@@ -1,8 +1,8 @@
 ---
 title: "碎碎念 · 本地测试"
 date: 2026-08-11T18:00:00+08:00
-draft: true
-tags: ["本地测试", "日常"]
+draft: false
+tags: ["日常"]
 comments: true
 license: false
 readingTime: false
