@@ -1,7 +1,7 @@
 ---
 title: 我的一些思考（一）——大学这三年究竟给我带来了什么？
 date: 2026-09-10
-draft: true
+draft: false
 description: 我的大学三年——反思与总结
 tags:
     - 随笔
