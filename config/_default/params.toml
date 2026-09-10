@@ -2,6 +2,13 @@ mainSections = ["post"]
 rssFullContent = true
 favicon = "img/my_avatar.jpg"
 
+[memos]
+    author = "逐马"
+    avatar = "img/my_avatar.jpg"
+    pageSize = 8
+    homeExcerptLength = 120
+    dateFormat = "2006-01-02 15:04"
+
 [sidebar]
     # emoji = "📝"
     avatar = "img/my_avatar.jpg"

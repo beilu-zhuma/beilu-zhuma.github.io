@@ -1,0 +1,14 @@
+{{- $result := false -}}
+
+{{- if or .IsHome (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "term") -}}
+    {{- $pages := partial "helper/pages.html" . -}}
+    {{- if and .IsSection (eq .Type "memos") -}}
+        {{- $pages = (where .RegularPages "Type" "memos").ByDate.Reverse -}}
+        {{- $pageSize := int (default 8 .Site.Params.memos.pagesize) -}}
+        {{- $result = .Paginate $pages $pageSize -}}
+    {{- else -}}
+        {{- $result = .Paginate $pages -}}
+    {{- end -}}
+{{- end -}}
+
+{{- return $result -}}

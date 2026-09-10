@@ -208,8 +208,6 @@ const reloadGiscus = () => {
 
     if (!sourceScript) return;
 
-    liveScript?.remove();
-
     const script = document.createElement('script');
     Array.from(sourceScript.attributes).forEach((attribute) => {
         script.setAttribute(attribute.name, attribute.value);
@@ -221,7 +219,21 @@ const reloadGiscus = () => {
     }
 
     script.async = true;
-    main.appendChild(script);
+
+    if (liveScript?.parentNode) {
+        liveScript.replaceWith(script);
+        return;
+    }
+
+    const commentsContainer = main.querySelector<HTMLElement>('#comments .memo-comments__body')
+        || main.querySelector<HTMLElement>('#comments');
+    if (commentsContainer) {
+        commentsContainer.appendChild(script);
+        return;
+    }
+
+    const footer = main.querySelector<HTMLElement>('footer.site-footer');
+    main.insertBefore(script, footer);
 };
 
 const syncPageShell = (event: Event) => {

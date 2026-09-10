@@ -1,0 +1,41 @@
+{{ define "body-class" }}memos-page{{ end }}
+
+{{ define "main" }}
+    {{- $memos := where .RegularPages "Type" "memos" -}}
+    {{- $memos = $memos.ByDate.Reverse -}}
+    {{- $paginator := partial "helper/paginator.html" . -}}
+
+    <header class="memos-header">
+        <h3 class="section-title">随手记录</h3>
+        <div class="section-card">
+            <div class="section-details">
+                <h3 class="section-count">{{ len $memos }} 条碎碎念</h3>
+                <h1 class="section-term">{{ .Title }}</h1>
+                {{- with .Description }}
+                    <h2 class="section-description">{{ . }}</h2>
+                {{- end }}
+            </div>
+        </div>
+    </header>
+
+    {{- if gt (len $memos) 0 }}
+        <section class="memo-list" aria-label="碎碎念列表">
+            {{- range $paginator.Pages }}
+                {{ partial "memos/card.html" (dict "Page" .) }}
+            {{- end }}
+        </section>
+        {{ partial "pagination.html" . }}
+    {{- else }}
+        <section class="memo-empty">
+            {{ partial "helper/icon" "messages" }}
+            <h2>这里还没有碎碎念</h2>
+            <p>第一条随手记录正在路上。</p>
+        </section>
+    {{- end }}
+
+    {{ partialCached "footer/footer" . }}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
+{{ end }}

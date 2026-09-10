@@ -1,0 +1,59 @@
+{{- $page := .Page -}}
+{{- $isSingle := default false .IsSingle -}}
+{{- $memoParams := $page.Site.Params.memos -}}
+{{- $author := default $page.Site.Title $memoParams.author -}}
+{{- $avatar := default $page.Site.Params.sidebar.avatar $memoParams.avatar -}}
+{{- $dateFormat := default "2006-01-02 15:04" $memoParams.dateformat -}}
+{{- $tags := $page.GetTerms "tags" -}}
+
+<article class="memo-card{{ if $isSingle }} memo-card--single{{ end }}" aria-label="{{ $page.Title }}">
+    <header class="memo-card__header">
+        {{- with $avatar }}
+            <a class="memo-card__avatar" href="{{ $page.CurrentSection.RelPermalink }}" aria-label="查看全部碎碎念">
+                <img src="{{ . | relURL }}" alt="{{ $author }}" width="44" height="44" loading="lazy">
+            </a>
+        {{- end }}
+        <div class="memo-card__identity">
+            <span class="memo-card__author">{{ $author }}</span>
+            <a class="memo-card__date" href="{{ $page.RelPermalink }}" title="打开这条碎碎念">
+                <time datetime="{{ $page.Date.Format `2006-01-02T15:04:05Z07:00` }}">
+                    {{- $page.Date.Format $dateFormat -}}
+                </time>
+            </a>
+        </div>
+    </header>
+
+    <div class="memo-card__content">
+        {{ partial "article/components/content.html" $page }}
+    </div>
+
+    <footer class="memo-card__footer">
+        {{- with $tags }}
+            <nav class="memo-card__tags" aria-label="标签">
+                {{- range . }}
+                    <a class="memo-card__tag" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
+                {{- end }}
+            </nav>
+        {{- end }}
+
+        <nav class="memo-card__actions" aria-label="碎碎念操作">
+            {{- if $isSingle }}
+                <a href="{{ $page.CurrentSection.RelPermalink }}">
+                    {{ partial "helper/icon" "back" }}
+                    <span>全部碎碎念</span>
+                </a>
+            {{- else }}
+                <a href="{{ $page.RelPermalink }}">
+                    {{ partial "helper/icon" "link" }}
+                    <span>永久链接</span>
+                </a>
+            {{- end }}
+            {{- if and $page.Site.Params.comments.enabled (not (eq $page.Params.comments false)) }}
+                <a href="{{ $page.RelPermalink }}#comments">
+                    {{ partial "helper/icon" "messages" }}
+                    <span>评论</span>
+                </a>
+            {{- end }}
+        </nav>
+    </footer>
+</article>

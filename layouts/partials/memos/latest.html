@@ -1,0 +1,23 @@
+{{- $section := .Site.GetPage "/memos" -}}
+{{- $memos := where .Site.RegularPages "Type" "memos" -}}
+{{- $memos = $memos.ByDate.Reverse -}}
+{{- $excerptLength := int (default 120 .Site.Params.memos.homeexcerptlength) -}}
+{{- with $memos }}
+    {{- $latest := index . 0 -}}
+    <section class="memo-latest" aria-labelledby="memo-latest-title">
+        <div class="memo-latest__header">
+            <h2 id="memo-latest-title">
+                <a href="{{ $section.RelPermalink }}">最新的碎碎念</a>
+            </h2>
+            <a class="memo-latest__all" href="{{ $section.RelPermalink }}">查看全部碎碎念 →</a>
+        </div>
+        <a class="memo-latest__date" href="{{ $latest.RelPermalink }}">
+            <time datetime="{{ $latest.Date.Format `2006-01-02T15:04:05Z07:00` }}">
+                {{- $latest.Date.Format (default "2006-01-02 15:04" $latest.Site.Params.memos.dateformat) -}}
+            </time>
+        </a>
+        <p class="memo-latest__excerpt">
+            <a href="{{ $latest.RelPermalink }}">{{ $latest.Plain | htmlUnescape | strings.TrimSpace | truncate $excerptLength }}</a>
+        </p>
+    </section>
+{{- end }}

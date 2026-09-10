@@ -1,0 +1,24 @@
+{{ define "main" }}
+    {{- $paginator := partial "helper/paginator.html" . -}}
+    {{- $showLatestMemo := true -}}
+    {{- with $paginator -}}
+        {{- $showLatestMemo = eq .PageNumber 1 -}}
+    {{- end -}}
+
+    {{- if $showLatestMemo -}}
+        {{ partial "memos/latest.html" . }}
+    {{- end -}}
+
+    <section class="article-list">
+        {{ range $paginator.Pages }}
+            {{ partial "article-list/default" . }}
+        {{ end }}
+    </section>
+
+    {{- partial "pagination.html" . -}}
+    {{- partial "footer/footer" . -}}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
+{{ end }}

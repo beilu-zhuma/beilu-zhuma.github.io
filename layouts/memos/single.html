@@ -1,0 +1,18 @@
+{{ define "body-class" }}article-page memo-single-page{{ end }}
+
+{{ define "main" }}
+    {{ partial "memos/card.html" (dict "Page" . "IsSingle" true) }}
+
+    {{- if and .Site.Params.comments.enabled (not (eq .Params.comments false)) }}
+        <section id="comments" class="memo-comments" aria-labelledby="memo-comments-title">
+            <h2 id="memo-comments-title" class="section-title">评论</h2>
+            <div class="memo-comments__body">
+                {{ partial "comments/include.html" . }}
+            </div>
+        </section>
+    {{- end }}
+
+    {{ partialCached "footer/footer" . }}
+    {{ partialCached "article/components/photoswipe.html" . }}
+    {{ partial "article/components/mermaid.html" . }}
+{{ end }}

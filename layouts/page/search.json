@@ -1,0 +1,20 @@
+{{- $pages := where .Site.RegularPages "Type" "in" (slice "post" "memos") -}}
+{{- $result := slice -}}
+
+{{- range $pages -}}
+    {{- $tags := slice -}}
+    {{- range (.GetTerms "tags") -}}
+        {{- $tags = $tags | append .LinkTitle -}}
+    {{- end -}}
+    {{- $content := printf "%s %s" .Plain (delimit $tags " ") -}}
+    {{- $data := dict "title" .Title "date" .Date "permalink" .RelPermalink "content" $content -}}
+
+    {{- $image := partial "helper/image" (dict "Image" .Params.image "Resources" .Resources "Context" .) -}}
+    {{- if $image -}}
+        {{- $data = merge $data (dict "image" $image.Permalink) -}}
+    {{- end -}}
+
+    {{- $result = $result | append $data -}}
+{{- end -}}
+
+{{ jsonify $result }}
