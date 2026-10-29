@@ -9,13 +9,13 @@
 <article class="memo-card{{ if $isSingle }} memo-card--single{{ end }}" aria-label="{{ $page.Title }}">
     <header class="memo-card__header">
         {{- with $avatar }}
-            <a class="memo-card__avatar" href="{{ $page.CurrentSection.RelPermalink }}" aria-label="查看全部碎碎念">
+            <a class="memo-card__avatar" href="{{ $page.CurrentSection.RelPermalink }}" aria-label="查看全部逐马乱讲">
                 <img src="{{ . | relURL }}" alt="{{ $author }}" width="44" height="44" loading="lazy">
             </a>
         {{- end }}
         <div class="memo-card__identity">
             <span class="memo-card__author">{{ $author }}</span>
-            <a class="memo-card__date" href="{{ $page.RelPermalink }}" title="打开这条碎碎念">
+            <a class="memo-card__date" href="{{ $page.RelPermalink }}" title="打开这条记录">
                 <time datetime="{{ $page.Date.Format `2006-01-02T15:04:05Z07:00` }}">
                     {{- $page.Date.Format $dateFormat -}}
                 </time>
@@ -36,11 +36,11 @@
             </nav>
         {{- end }}
 
-        <nav class="memo-card__actions" aria-label="碎碎念操作">
+        <nav class="memo-card__actions" aria-label="逐马乱讲操作">
             {{- if $isSingle }}
                 <a href="{{ $page.CurrentSection.RelPermalink }}">
                     {{ partial "helper/icon" "back" }}
-                    <span>全部碎碎念</span>
+                    <span>全部逐马乱讲</span>
                 </a>
             {{- else }}
                 <a href="{{ $page.RelPermalink }}">

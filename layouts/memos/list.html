@@ -6,10 +6,9 @@
     {{- $paginator := partial "helper/paginator.html" . -}}
 
     <header class="memos-header">
-        <h3 class="section-title">随手记录</h3>
         <div class="section-card">
             <div class="section-details">
-                <h3 class="section-count">{{ len $memos }} 条碎碎念</h3>
+                <h3 class="section-count">{{ len $memos }} 条乱讲</h3>
                 <h1 class="section-term">{{ .Title }}</h1>
                 {{- with .Description }}
                     <h2 class="section-description">{{ . }}</h2>
@@ -19,7 +18,7 @@
     </header>
 
     {{- if gt (len $memos) 0 }}
-        <section class="memo-list" aria-label="碎碎念列表">
+        <section class="memo-list" aria-label="逐马乱讲列表">
             {{- range $paginator.Pages }}
                 {{ partial "memos/card.html" (dict "Page" .) }}
             {{- end }}
@@ -28,8 +27,8 @@
     {{- else }}
         <section class="memo-empty">
             {{ partial "helper/icon" "messages" }}
-            <h2>这里还没有碎碎念</h2>
-            <p>第一条随手记录正在路上。</p>
+            <h2>还没开始乱讲，稍等片刻</h2>
+            <p>第一条乱讲正在路上。</p>
         </section>
     {{- end }}
 
